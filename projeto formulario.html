@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <!-- A fonte foi tirado do google fonts https://fonts.google.com/specimen/Poppins?query=poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    
+    <title>Projeto Formulario</title>
+</head>
+<body>
+    <div class="recado">
+        <h5>Projeto de formulario com validação <a href="https://www.youtube.com/watch?v=3Ec9zY1C2og&ab_channel=FelipeRocha%E2%80%A2dicasparadevs">Clique aqui</a></h5>
+        <h6>Neste vídeo vamos, juntos, construir um formulário completo, com validações em todos os seus campos, usando HTML, CSS e JavaScript!</h6>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="header">
+            <h2>Criar uma Conta</h2>
+        </div>
+        <form action="#" id="form" class="form">
+            <!-- label+input+i+i+smal me da as tage que estão abaixo em um unico comando 
+            as tag <i> serão os icones e vamos usar o fontawesome https://fontawesome.com/
+            Aqui está o meu kit disponivel https://fontawesome.com/search?s=solid&f=classic&o=r     
+            -->
+            <div class="form-control " id="form-control">
+                <label for="username">Nome de Usuário</label>
+                <input type="text" id="username" placeholder="Digite o usuário">
+                <i class="fa-solid fa-circle-exclamation fa-shake" style="color: #ae4747;"></i>
+                <i class="fa-sharp fa-solid fa-circle-check fa-bounce" style="color: #3bc484;"></i>
+                <small >Usuario incorreto</small>
+            </div>
+            <div class="form-control"id="form-control"> 
+                <label for="email">e-mail</label>
+                <input type="text" id="email" placeholder="Digite e-mail">
+                <i class="fa-solid fa-circle-exclamation fa-shake" style="color: #ae4747;"></i>
+                <i class="fa-sharp fa-solid fa-circle-check fa-bounce" style="color: #3bc484;"></i>
+                <small>Digite um e-mail valido</small>
+            </div>
+            <div class="form-control" id="form-control"> 
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Digite password">
+                <i class="fa-solid fa-circle-exclamation fa-shake" style="color: #ae4747;"></i>
+                <i class="fa-sharp fa-solid fa-circle-check fa-bounce" style="color: #3bc484;"></i>
+                <small>password incorreto!!</small>
+            </div>
+            <div class="form-control"id="form-control"> 
+                <label for="password-confirmation">Password-confirmation</label>
+                <input type="password" id="password-confirmation" placeholder="Digite sua senha novamente">
+                <i class="fa-solid fa-circle-exclamation fa-shake" style="color: #ae4747;"></i>
+                <i class="fa-sharp fa-solid fa-circle-check fa-bounce" style="color: #3bc484;"></i>
+                <small>password nao confere coma senha</small>
+            </div>
+
+            <button type="submit" id="btn">Enviar</button>
+        </form>
+    </div>
+
+    <script src="https://kit.fontawesome.com/4efdf4b237.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
